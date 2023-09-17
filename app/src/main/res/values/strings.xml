@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Apps name</string>
+    <string-array name="emergency_types">
+        <item>Fire</item>
+        <item>Medical Emergency</item>
+        <item>Natural Disaster</item>
+    </string-array>
+</resources>

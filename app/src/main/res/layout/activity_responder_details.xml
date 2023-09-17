@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".ResponderDetailsActivity">
+
+    <!-- ETA TextView -->
+    <TextView
+        android:id="@+id/etaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ETA: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="16dp" />
+
+    <!-- Location TextView -->
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/etaTextView"
+        android:layout_marginTop="8dp" />
+
+    <!-- Placeholder Image -->
+    <ImageView
+        android:id="@+id/placeholderImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/locationTextView"
+        android:layout_marginTop="96dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image" />
+
+</RelativeLayout>
