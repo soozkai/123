@@ -17,4 +17,18 @@
         android:textColor="@android:color/white"
         android:gravity="center"
         android:elevation="6dp" />
+
+    <Button
+        android:id="@+id/emsbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_ping"
+        android:text="EMS"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" />
+
 </RelativeLayout>

@@ -16,12 +16,23 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.page_home);
 
         Button buttonPing = findViewById(R.id.button_ping);
+        Button emsbtn = findViewById(R.id.emsbtn);
         buttonPing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Show a confirmation dialog before redirecting to FirstRespondersActivity
                 showConfirmationDialog();
             }
+
+        });
+
+        emsbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Show a confirmation dialog before redirecting to FirstRespondersActivity
+                redirectToEMSActivity();
+            }
+
         });
     }
 
@@ -47,6 +58,11 @@ public class HomePage extends AppCompatActivity {
     // Method to redirect to the FirstRespondersActivity
     private void redirectToFirstRespondersActivity() {
         Intent intent = new Intent(this, FirstResponderActivity.class);
+        startActivity(intent);
+    }
+
+    private void redirectToEMSActivity() {
+        Intent intent = new Intent(this, EmergencyMapActivity.class);
         startActivity(intent);
     }
 }

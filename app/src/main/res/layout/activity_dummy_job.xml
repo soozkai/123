@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".DummyJobActivity">
+
+    <!-- Placeholder Image -->
+    <ImageView
+        android:id="@+id/placeholderImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image" />
+
+    <!-- Emergency Class TextView -->
+    <TextView
+        android:id="@+id/emergencyclassTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeholderImageView"
+        android:text="Fire Emergency"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- Emergency Type TextView -->
+    <TextView
+        android:id="@+id/emergencytypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emergencyclassTextView"
+        android:text="Type: House Fire"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- Location TextView -->
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emergencytypeTextView"
+        android:text="Location: Chatsworth Rd, Greenslopes"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- ETA TextView -->
+    <TextView
+        android:id="@+id/etaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationTextView"
+        android:text="ETA: 10 mins"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- Danger Level TextView -->
+    <TextView
+        android:id="@+id/dangerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etaTextView"
+        android:text="Danger Level: Medium (Progressing)"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- Area Temp TextView -->
+    <TextView
+        android:id="@+id/areaTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dangerTextView"
+        android:text="Area Temperature: 40&#x1D52;C"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- View Jobs Button -->
+    <Button
+        android:id="@+id/respondbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/areaTempTextView"
+        android:text="Respond"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Log Out Button -->
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/respondbtn"
+        android:text="Back"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

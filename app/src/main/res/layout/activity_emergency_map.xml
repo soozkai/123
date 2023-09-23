@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".EmergencyMapActivity">
+
+    <!-- Placeholder Image -->
+    <ImageView
+        android:id="@+id/placeholderImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image" />
+
+    <!-- Current Emergencies TextView -->
+    <TextView
+        android:id="@+id/emergencynumTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeholderImageView"
+        android:text="Current Emergencies: 47"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp" />
+
+    <!-- Location TextView -->
+    <TextView
+        android:id="@+id/locationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emergencynumTextView"
+        android:text="Current Location: Greenslopes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- Temperature TextView -->
+    <TextView
+        android:id="@+id/areaTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/locationTextView"
+        android:text="Area Temperature: 30&#x1D52;C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- Humidity TextView -->
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/areaTempTextView"
+        android:text="Humidity: 70%"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- View Jobs Button -->
+    <Button
+        android:id="@+id/viewJobsbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/humidityTextView"
+        android:text="View Jobs"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Log Out Button -->
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewJobsbtn"
+        android:text="Log Out"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
