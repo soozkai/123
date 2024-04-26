@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Jersey25';
+    src: url('Jersey25-Regular.ttf');
+}
+
+.input-group .form-control {
+}
+
+.btn-primary {
+}
+.titled-pane > .title {
+    -fx-padding: 3; /* Reduce padding around the title */
+    -fx-font-size: 12; /* Smaller font size for the title */
+}
+
+.h1 {
+    -fx-font-family: 'Jersey 25';
+    -fx-font-size: 48px;
+}
+
