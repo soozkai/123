@@ -3,6 +3,15 @@ module com.example.cab302_week9 {
     requires javafx.fxml;
     requires javafx.web;
     requires org.kordamp.bootstrapfx.core;
+    requires java.logging;
+    requires org.mongodb.driver.sync.client;
+    requires org.mongodb.bson;
+    requires org.mongodb.driver.core;
+    requires java.desktop;
+    requires stanford.corenlp;
+    requires jbcrypt;
+
+
     opens com.example.cab302_week9 to javafx.fxml;
     exports com.example.cab302_week9;
 }
