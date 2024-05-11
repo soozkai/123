@@ -39,7 +39,7 @@ public class MainApp extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("BrowserUI.fxml"));
         Scene scene = new Scene(root);
         scene.getStylesheets().add(BootstrapFX.bootstrapFXStylesheet());
-        scene.getStylesheets().add(getClass().getRe source("style.css").toExternalForm());
+        scene.getStylesheets().add(getClass().getResource("style.css").toExternalForm());
         primaryStage.setTitle("Mindful Browser");
         primaryStage.setScene(scene);
         primaryStage.show();
